@@ -495,7 +495,9 @@ func (c *APIClient) ParseV2rayNodeResponse(nodeInfoResponse *simplejson.Json) (*
 	}
 
 	// XTLS only supports TLS and REALITY directly for now
-	if transportProtocol == "tcp" && enableReality {
+	if (transportProtocol == "grpc" || transportProtocol == "h2") && enableReality {
+		vlessFlow = ""
+	} else if transportProtocol == "tcp" && enableReality {
 		vlessFlow = "xtls-rprx-vision"
 	} else {
 		vlessFlow = c.VlessFlow
