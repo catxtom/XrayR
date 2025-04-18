@@ -1,6 +1,8 @@
 # Build go
 FROM golang:1.22.0-alpine AS builder
 WORKDIR /app
+# 添加必要的构建工具
+RUN apk add --no-cache git gcc musl-dev
 COPY . .
 ENV CGO_ENABLED=0
 RUN go mod download
