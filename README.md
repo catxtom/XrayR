@@ -20,6 +20,11 @@ A Xray backend framework that can easily support many panels.
 使用教程：[详细使用教程](https://xrayr-project.github.io/XrayR-doc/)
 
 
+## 分支说明
+0.9.6版 分支 支持2025-1-1版 v2rayro**s 最新对接
+同时docker镜像支持
+
+
 ## 免责声明
 
 本项目只是本人个人学习开发并维护，本人不保证任何可用性，也不对使用本软件造成的任何后果负责。
