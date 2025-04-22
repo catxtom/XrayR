@@ -24,6 +24,7 @@ A Xray backend framework that can easily support many panels.
 0.9.6版 分支 支持2025-1-1版 v2rayro**s 最新对接
 同时docker镜像支持
 
+使用脚本和docker  https://github.com/catxtom/XrayR-release
 
 ## 免责声明
 
